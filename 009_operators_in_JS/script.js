@@ -12,3 +12,4 @@ let incr = 10,
 
 console.log(++incr); // в префиксной форме отобразится новое значение сразу
 console.log(--decr);
+console.log(incr);
