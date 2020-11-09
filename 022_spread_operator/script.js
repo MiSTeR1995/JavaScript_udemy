@@ -70,7 +70,31 @@ console.log(newArr);
 
 
 // Новые стандарты ES6 и ES8
-// оператор разворота Spread
-const video = ['yt', 'vimeo','rutube'],
+// оператор разворота Spread - разворачивает структуру и превращает ее в набор
+// каких-то данных
+const video = ['yt', 'vimeo', 'rutube'],
     blogs = ['wp', 'blogger', 'livejournal'],
-    internet = [];
+    internet = [...video, ...blogs, 'vk', 'facebook']; // такой синтаксис вытаскиет элементы из массивов и помещает их через запятую
+console.log(internet);
+
+// пример посложнее
+function log(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+const num = [2, 5, 7];
+log(...num); // с помощью spread оператора можно передвать массив в функции, т.к он разобьет их через запятую и они будут аргументами
+
+const array = ['a', 'b'];
+// поверхностная копия  с помощью spread оператора
+const newArray = [...array];
+console.log(newArray);
+
+// этот оператор работает также и с объектами
+const objct = {
+    one: 1,
+    two: 2
+};
+const newObjct = {...objct}; // это стандарт ES9
+console.log(newObjct);
