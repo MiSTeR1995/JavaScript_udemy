@@ -1,24 +1,19 @@
 # <center> JavaScript_udemy </center>
 ***
-## Полезные ссылки к урокам
-
 ## Первая часть курса. Основы работы с JS.
 
-### 004 Lesson
-JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language
-https://www.amazon.com/JavaScript-Definitive-Guide-David-Flanagan/dp/1491952024/ref=sr_1_1?dchild=1&keywords=JavaScript%3A+The+Definitive+Guide&qid=1586077372&sr=8-1
+### Урок #4
+[JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language](https://www.amazon.com/JavaScript-Definitive-Guide-David-Flanagan/dp/1491952024/ref=sr_1_1?dchild=1&keywords=JavaScript%3A+The+Definitive+Guide&qid=1586077372&sr=8-1 'JavaScript: The Definitive Guide')
 
----
 
-### 005 Lesson
-#### Strict-mode
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+### Урок #5
+[Strict-mode](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Strict_mode)
 
-https://caniuse.com/
+Сервис для проверки совместимости элементов с браузерами: [Caniuse.com](https://caniuse.com/)
 
-### 006 Lesson
-#### BigInt
-https://medium.com/@hydrock/bigint-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B2-js-dd5c29446570
+### Урок #6
+Новый тип данных в JS - [BigInt](https://medium.com/@hydrock/bigint-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B2-js-dd5c29446570)
+
 
 #### Symbol
 https://learn.javascript.ru/symbol
