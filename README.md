@@ -1,6 +1,6 @@
 # <center> JavaScript_udemy </center>
 ***
-## Первая часть курса. Основы работы с JS.
+## Первая часть курса. Основы работы с JS
 
 ### Урок #4
 [JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language](https://www.amazon.com/JavaScript-Definitive-Guide-David-Flanagan/dp/1491952024/ref=sr_1_1?dchild=1&keywords=JavaScript%3A+The+Definitive+Guide&qid=1586077372&sr=8-1 'JavaScript: The Definitive Guide')
@@ -18,129 +18,117 @@
 
 ![Картинка](imgs/types_2020.jpg)
 
+### Урок #7
+
+Оператор  [typeof](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof) возвращает строку, указывающую тип операнда.
+
+[Document.write()](https://developer.mozilla.org/ru/docs/Web/API/Document/write)
 
 
-### 007 Lesson
-#### typeof
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof
+### Урок #8
+[Шаблонными литералами](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings) (\` \`) называются строковые литералы, допускающие использование выражений внутри.
 
-#### Document.write
-https://developer.mozilla.org/ru/docs/Web/API/Document/write
+### Урок #9
+[Приоритет операторов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table 'Таблица приоритетов') определяет порядок, в котором операторы выполняются. Операторы с более высоким приоритетом выполняются первыми.
 
-### 008 Lesson
+### Урок #10
+[Git How To](https://githowto.com/ru) — знакомство с основами Git.
 
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings
+Более подробное [руководство](https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9) по работе с Git.
 
-### 009 Lesson
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table
+Установка системы контроля версий [git-scm.com](https://git-scm.com/).
 
-### 010  Lesson
-#### Git
-https://githowto.com/ru
+### Урок #11
+Git GUI - [GitKraken](https://www.gitkraken.com/)
 
-https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9
+Настроенный [gitignore](https://drive.google.com/open?id=1XjU5Bv9B795eQa2c0rfg_Hr11sFvWwgh) от преподавателя курса.
 
-https://git-scm.com/
+### Урок #12
+[Практика 1. Основы работы с массивами и объектами.](https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_1)
 
-### 011 Lesson
-#### Gitkraken
-https://www.gitkraken.com/
 
-#### gitignore
-https://drive.google.com/open?id=1XjU5Bv9B795eQa2c0rfg_Hr11sFvWwgh
+### Урок #13
+[Условные конструкции](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Building_blocks/conditionals)
 
-### 012 Lesson
-https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_1
+### Урок #14
+[Циклы и итерации](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8
+)
 
-### 013 Lesson
-https://developer.mozilla.org/ru/docs/Learn/JavaScript/Building_blocks/conditionals
+### Урок #15
+[Практика 2. Применение циклов и условий](https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_2)
 
-### 014 Lesson
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B_%D0%B8_%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8
 
-### 015 Lesson
-https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_2
+### Урок #16
 
-### 016 Lesson
-https://medium.com/nuances-of-programming/%D1%8F-%D0%BD%D0%B8%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BD%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BB-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-3c3f02041970
+![Картинка](imgs/016_functions.jpg)
 
-### 017 Lesson
-https://learn.javascript.ru/string
+[Замыкания](https://medium.com/nuances-of-programming/%D1%8F-%D0%BD%D0%B8%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BD%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BB-%D0%B7%D0%B0%D0%BC%D1%8B%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2-javascript-%D1%87%D0%B0%D1%81%D1%82%D1%8C-%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-3c3f02041970) в JavaScript
 
-### 018 Lesson
-https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_3
+### Урок #17
 
-### 019 Lesson
-#### Callback
-https://learn.javascript.ru/callbacks
+Строковый тип данных [String](https://learn.javascript.ru/string)
 
-### 020 Lesson
-https://learn.javascript.ru/destructuring#destrukturizatsiya-obekta
+### Урок #18
 
-#### Javascript
-https://javascript.ru/tutorial/object/intro
+[Практика 3. Применение функций](https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_3)
 
-#### for-in
-https://learn.javascript.ru/object-for-in
+### Урок #19
 
-### 021 Lesson
-http://algolist.ru/sort/quick_sort.php
+[Callback](https://learn.javascript.ru/callbacks) функции
 
-#### for of - for in
-http://coldfox.ru/article/5c7ffe64bbf20e61c12c7348/%D0%9E%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5-for-of-%D0%BE%D1%82-for-in-%D0%B2-javascript
+### Урок #20
+[Деструктурирующее присваивание](https://learn.javascript.ru/destructuring#destrukturizatsiya-obekta) – это специальный синтаксис, который позволяет нам «распаковать» массивы или объекты в кучу переменных, так как иногда они более удобны.
 
-### 022 Lesson -
-https://medium.com/@stasonmars/%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-%D0%B2-javascript-d25c261a7aff
+[Объекты ](https://javascript.ru/tutorial/object/intro) Javascript в примерах
 
-### 022 Lesson
-#### Object.assign
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+Перебор свойств объкта с помощью [for-in](https://learn.javascript.ru/object-for-in)
 
-#### Spread-operator
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+![Картинка](imgs/021_Objects-Arrays.jpg)
 
-### 023 Lesson
-#### proto
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/proto
+### Урок #21
 
-### 024 Lesson
-https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_4
+Алгоритм [быстрой сортировки](http://algolist.ru/sort/quick_sort.php)
 
-### 026 Lesson
-https://drive.google.com/open?id=1Nm2PDGru199Yf0c9l1T-upYbi0UkEj1F
+[Отличие](http://coldfox.ru/article/5c7ffe64bbf20e61c12c7348/%D0%9E%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5-for-of-%D0%BE%D1%82-for-in-%D0%B2-javascript) for...of от for...in в javascript
 
-#### cssText
-https://www.w3schools.com/jsref/prop_style_csstext.asp
 
-### 027 Lesson
-https://drive.google.com/open?id=1xXLFKnhETnMqI444sm4Jq1fpEcLQlnyb
+### Урок #22
 
-### 028 Lesson
-https://drive.google.com/open?id=1sxbFDM645vAVnBhUuSgGKXadJTKuIn28
+[Копирование](https://medium.com/@stasonmars/%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2-%D0%B2-javascript-d25c261a7aff
+) объектов в JavaScript
 
-### 029 Lesson
-https://drive.google.com/open?id=1sxbFDM645vAVnBhUuSgGKXadJTKuIn28
+### Урок #23
+Метод [Object.assign()](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) используется для копирования значений всех собственных перечисляемых свойств из одного или более исходных объектов в целевой объект.
 
-https://caniuse.com/
+[Spread-operator](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
-### 030 Lesson
-https://drive.google.com/open?id=1RNaX1v7ZCzJzF55x_Fv5hYCP4DP9EtKg
+### Урок #24
+[Прототипы](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/proto) в javascript
 
-### 031 Lesson
-https://oddler.ru/blog/i63
+![Картинка](imgs/prototypes.png)
 
-#### addEventListener
-https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener
+### Урок #25
+[Практика 4. Рефакторинг кода](https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_4)
 
-#### removeEventListener
-https://developer.mozilla.org/ru/docs/Web/API/EventTarget/removeEventListener
+### Урок #26
+![Картинка](imgs/026_classification.jpg)
 
-### 032 Lesson
-#### data
-https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Using_data_attributes
+[cssText](https://www.w3schools.com/jsref/prop_style_csstext.asp)
 
-### 033 Lesson
-https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_6
+### Урок #31
+Список родных [событий](https://oddler.ru/blog/i63) Javascript
 
-### 034 Lesson
-http://youon.ru/%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%B8%D0%B4/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/touch-sobytiya-na-javascript-multitach-realizatsiya
+Метод [EventTarget.addEventListener()](https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener)
+
+Метод [EventTarget.removeEventListener()](https://developer.mozilla.org/ru/docs/Web/API/EventTarget/removeEventListener)
+
+### Урок #32
+Использование [data-* атрибутов](https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Using_data_attributes)
+
+
+### Урок #33
+[Практика. Финальное задание по первой главе](https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_6)
+
+### Урок #34
+
+Cпособы осуществления обработки [тач-событий разной сложности](http://youon.ru/%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%B8%D0%B4/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/touch-sobytiya-na-javascript-multitach-realizatsiya) на Javascript Event'ах, без сторонних библиотек
