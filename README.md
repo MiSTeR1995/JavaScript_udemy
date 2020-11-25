@@ -17,7 +17,6 @@
 Тип данных [Symbol](https://learn.javascript.ru/symbol)
 
 ![Картинка](imgs/types_2020.jpg)
-![Картинка](https://drive.google.com/open?id=13TdbVsWl7r_GX6TZJcd60HrtvISkMZ7m)
 
 
 
