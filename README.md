@@ -14,9 +14,9 @@
 ### Урок #6
 Новый тип данных в JS - <a href='https://medium.com/@hydrock/bigint-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9-%D1%82%D0%B8%D0%BF-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B2-js-dd5c29446570' target="_blank">BigInt</a>
 
+Тип данных [Symbol](https://learn.javascript.ru/symbol)
 
-#### Symbol
-https://learn.javascript.ru/symbol
+![](imgs/types_2020.jpg)
 
 https://drive.google.com/open?id=13TdbVsWl7r_GX6TZJcd60HrtvISkMZ7m
 
