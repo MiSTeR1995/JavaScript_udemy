@@ -1,9 +1,14 @@
-# JavaScript_udemy
+# <center> JavaScript_udemy </center>
+***
+## Полезные ссылки к урокам
 
-# Полезные ссылки к урокам
+## Первая часть курса. Основы работы с JS.
+
 ### 004 Lesson
-#### JavaScript
+JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language
 https://www.amazon.com/JavaScript-Definitive-Guide-David-Flanagan/dp/1491952024/ref=sr_1_1?dchild=1&keywords=JavaScript%3A+The+Definitive+Guide&qid=1586077372&sr=8-1
+
+---
 
 ### 005 Lesson
 #### Strict-mode
