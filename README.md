@@ -131,3 +131,62 @@ Git GUI - [GitKraken](https://www.gitkraken.com/)
 ### Урок #34 События на мобильных устройствах
 
 Cпособы осуществления обработки [тач-событий разной сложности](http://youon.ru/%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%B8%D0%B4/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/touch-sobytiya-na-javascript-multitach-realizatsiya) на Javascript Event'ах, без сторонних библиотек
+
+---
+
+037 classList
+https://developer.mozilla.org/ru/docs/Web/API/Element/classList
+
+037 matches
+https://developer.mozilla.org/ru/docs/Web/API/Element/matches
+
+037 -1
+https://learn.javascript.ru/event-delegation
+
+037 -2
+https://medium.com/@stasonmars/%D0%B4%D0%B5%D0%BB%D0%B5%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B8%CC%86-%D0%B2-javascript-d91cbdd8916a
+
+038 -
+https://drive.google.com/open?id=1-IIzpirT_ydJ-A6gij0_f7oz6MK7YdRS
+
+039 JavaScript-
+https://learn.javascript.ru/js-animation
+
+039 -
+https://drive.google.com/open?id=1U-AISCK350rGCCXZ7faYnolh8aF0jX8a
+
+040 -Date
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+040 -
+https://learn.javascript.ru/date
+
+041 -
+https://alligator.io/js/object-property-shorthand-es6/
+
+042 -
+https://drive.google.com/open?id=1eTxWzmaDfN0CXHC7Dv_AE39A1GlNO1nI
+
+043 -
+https://keycode.info/
+
+044 -
+https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_10
+
+045 -
+https://learn.javascript.ru/constructor-new
+
+046 -this
+https://tproger.ru/translations/javascript-this-keyword/
+
+047 -
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Classes
+
+048 -
+https://github.com/yankovalenko94/JS_task_answers/tree/master/JS_step_11
+
+049 rest
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters
+
+049 -
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters
