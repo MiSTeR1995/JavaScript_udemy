@@ -161,7 +161,7 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Da
 040 -
 https://learn.javascript.ru/date
 
-041 -
+041 - Создание таймера обратного отсчета в проекте
 https://alligator.io/js/object-property-shorthand-es6/
 
 042 -
