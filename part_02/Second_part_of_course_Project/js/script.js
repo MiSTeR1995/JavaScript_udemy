@@ -131,4 +131,56 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     setClock('.timer', deadline);
+
+    // Создание модального окна
+    const modalWin = document.querySelector('.modal');
+    const modalTrigger = document.querySelectorAll('[data-modal]');
+    const modalClose = document.querySelector('[data-close]');
+
+    modalTrigger.forEach( btn => {
+        btn.addEventListener('click', contactMe);
+    });
+
+    modalClose.addEventListener('click', contactMe);
+
+    // делаем закрытие модального окна, если пользователь нажимает на подложку
+    modalWin.addEventListener('click', event => {
+        if (event.target === modalWin){
+            contactMe();
+        }
+    });
+
+    // закрываем по клавише esc
+    document.addEventListener('keydown', () => {
+        if()
+    })
+
+    function contactMe () {
+
+        const getStyle = window.getComputedStyle(modalWin);
+
+        if (getStyle.display === 'none') {
+
+            modalWin.classList.add('show');
+            modalWin.classList.remove('hide');
+
+            // // реализация через toggle
+            // modalWin.classList.toggle('show');
+
+            // блокируем прокруту страницы
+            document.body.style.overflow = 'hidden';
+
+        } else {
+
+            modalWin.classList.add('hide');
+            modalWin.classList.remove('show');
+
+            // // реализация через toggle
+            // modalWin.classList.toggle('show');
+
+            // восстанавливаем прокрутку
+            document.body.style.overflow = '';
+
+        }
+    }
 });
