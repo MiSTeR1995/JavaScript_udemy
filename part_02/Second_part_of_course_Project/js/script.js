@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Создание таймера
 
-    const deadline = '2020-11-30';
+    const deadline = '2020-12-12';
 
     // функция определения разницы между дедлайном и текущим временем
     function getTimeRemaining(endTime) {
@@ -137,50 +137,68 @@ window.addEventListener('DOMContentLoaded', () => {
     const modalTrigger = document.querySelectorAll('[data-modal]');
     const modalClose = document.querySelector('[data-close]');
 
-    modalTrigger.forEach( btn => {
-        btn.addEventListener('click', contactMe);
+    // разбил на две функции открытия и закрытия
+    function openModal() {
+
+        modalWin.classList.add('show');
+        modalWin.classList.remove('hide');
+
+        // блокируем прокруту страницы
+        document.body.style.overflow = 'hidden';
+
+        // если пользователь сам открыл модальное окно до того, как оно открылось
+        // само, то убираем таймер, чтобы не доставать его лишний раз
+        clearInterval(modalTimerId);
+    }
+
+    function closeModal() {
+        modalWin.classList.add('hide');
+        modalWin.classList.remove('show');
+
+        // // реализация через toggle
+        // modalWin.classList.toggle('show');
+
+        // восстанавливаем прокрутку
+        document.body.style.overflow = '';
+
+    }
+    modalTrigger.forEach(btn => {
+        btn.addEventListener('click', openModal);
     });
 
-    modalClose.addEventListener('click', contactMe);
+    modalClose.addEventListener('click', closeModal);
 
     // делаем закрытие модального окна, если пользователь нажимает на подложку
     modalWin.addEventListener('click', event => {
-        if (event.target === modalWin){
-            contactMe();
+        if (event.target === modalWin) {
+            closeModal();
         }
     });
 
-    // закрываем по клавише esc
-    document.addEventListener('keydown', () => {
-        if()
-    })
+    // закрываем по клавише esc только при открытом окне
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape' && modalWin.classList.contains('show')) {
+            closeModal();
+        }
+    });
 
-    function contactMe () {
+    // вызываем модальное окно через определенное время
+    const modalTimerId = setTimeout(openModal, 3000);
 
-        const getStyle = window.getComputedStyle(modalWin);
+    function showModalByScroll() {
 
-        if (getStyle.display === 'none') {
+        // pageYOffset - прокрученная часть по высоте
+        // если долистали до конца, то прокрученная часть плюс клиент, который
+        // сейчас видно должны равняться всей высоте сайта
+        if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+            openModal();
 
-            modalWin.classList.add('show');
-            modalWin.classList.remove('hide');
-
-            // // реализация через toggle
-            // modalWin.classList.toggle('show');
-
-            // блокируем прокруту страницы
-            document.body.style.overflow = 'hidden';
-
-        } else {
-
-            modalWin.classList.add('hide');
-            modalWin.classList.remove('show');
-
-            // // реализация через toggle
-            // modalWin.classList.toggle('show');
-
-            // восстанавливаем прокрутку
-            document.body.style.overflow = '';
-
+            // как только один раз польз. долистал до конца стр., то удаляем обработчик, чтобы не бесил
+            window.removeEventListener('scroll', showModalByScroll);
         }
     }
+    // вызываем модалку в определенном месте (например в конце страницы)
+    // цепляем на глобальное окно
+    window.addEventListener('scroll', showModalByScroll);
+
 });
