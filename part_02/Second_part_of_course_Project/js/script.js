@@ -2,7 +2,7 @@
 // создание табов ( переключающиеся элементы)
 window.addEventListener('DOMContentLoaded', () => {
 
-    // Создание табов
+    // Создание табов на странице
     const tabs = document.querySelectorAll('.tabheader__item');
     const tabsContent = document.querySelectorAll('.tabcontent');
     const tabsParent = document.querySelector('.tabheader__items'); // родитель для делегирования событий
@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const target = event.target;
 
         if (target && target.classList.contains('tabheader__item')) {
-            tabs.forEach( (item, i) => {
+            tabs.forEach((item, i) => {
                 if (target == item) {
                     hideTabContent();
                     showTabContent(i);
@@ -43,7 +43,9 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Создание таймера
+
+
+    // Создание таймера акций и тд
 
     const deadline = '2020-12-12';
 
@@ -84,7 +86,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-
     // функция, которая устанавливает таймеры на страницу
     function setClock(selector, endTime) {
         const timer = document.querySelector(selector);
@@ -102,7 +103,7 @@ window.addEventListener('DOMContentLoaded', () => {
         // после этого уже будет работать интервал в 1с
         if (timeRemaining.total && timeRemaining.total <= 0) {
 
-            days.innerHTML  = `00`;
+            days.innerHTML = `00`;
             hours.innerHTML = `00`;
             minutes.innerHTML = `00`;
             seconds.innerHTML = `00`;
@@ -131,6 +132,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     setClock('.timer', deadline);
+
+
 
     // Создание модального окна
     const modalWin = document.querySelector('.modal');
@@ -201,4 +204,93 @@ window.addEventListener('DOMContentLoaded', () => {
     // цепляем на глобальное окно
     window.addEventListener('scroll', showModalByScroll);
 
+    // Использование классов для карточек меню
+
+    class MenuCard {
+        constructor(title, descr, price, imgSrc, imgAlt, parentSelector) {
+            this.title = title;
+            this.descr = descr;
+            this.price = price;
+            this.imgSrc = imgSrc;
+            this.imgAlt = imgAlt;
+            this.parent = document.querySelector(parentSelector); // DOM элемент
+            this.transfer = 75; // курс валют
+            this.convertToRUB(); // методы можно вызывать прямо в конструкторе
+        }
+
+        convertToRUB() {
+            this.price = this.price * this.transfer; // переводим из $ в Rub
+        }
+
+        // формируем верстку
+        render() {
+            // создаем элемент и помещаем в него верстку
+            const element = document.createElement('div');
+            element.innerHTML = `
+                <div class="menu__item">
+                    <img src=${this.imgSrc} alt=${this.imgAlt}>
+                    <h3 class="menu__item-subtitle">${this.title}</h3>
+                    <div class="menu__item-descr">${this.descr}</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Цена:</div>
+                        <div class="menu__item-total"><span>${this.price}</span> руб/день</div>
+                    </div>
+                </div>
+            `;
+
+            this.parent.append(element);
+        }
+
+
+        // моя реализация верстки
+        formMenu(cardNum = 1) {
+            const menuArr = [];
+            const menuItem = document.querySelectorAll('.menu__item');
+            menuItem.forEach((item, i) => {
+                menuArr[i] = item;
+            });
+
+
+            let h3 = menuArr[cardNum].querySelector('.menu__item-subtitle');
+            h3.innerHTML = `${this.title}`;
+            let text = menuArr[cardNum].querySelector('.menu__item-descr');
+            text.innerHTML = `${this.descr}`;
+            let price = menuArr[cardNum].querySelector('span');
+            price.innerHTML = `${this.price}`;
+            let img = menuArr[cardNum].querySelector('img');
+            img.src = this.imgSrc;
+
+        }
+    }
+
+    // Объект без переменной создается и удаляется, нужен чтобы использовать объект на месте
+    new MenuCard(
+        'Меню "Фитнес"',
+        'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
+        9,
+        'img/tabs/vegy.jpg',
+        'vegy',
+        '.menu .container'
+    ).render();
+
+    new MenuCard(
+        'Меню “Премиум”',
+        'В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!',
+        21,
+        'img/tabs/elite.jpg',
+        'elite',
+        '.menu .container'
+    ).render();
+
+    new MenuCard(
+        'Меню "Постное"',
+        'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.',
+        14,
+        'img/tabs/post.jpg',
+        'post',
+        '.menu .container'
+    ).render();
+
+    // после рендера их на страницу - нужно удалить эти карточки в html
 });
