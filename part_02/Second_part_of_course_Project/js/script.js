@@ -205,14 +205,24 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', showModalByScroll);
 
     // Использование классов для карточек меню
+    // UPD: Добавлен rest оператор для улучшенной кастомизации карточек.
+    // вдруг мы захотим еще добавить какое-то количество HTMLклассов элементу
+    // rest не поддерживает дефолтные параметры
 
     class MenuCard {
-        constructor(title, descr, price, imgSrc, imgAlt, parentSelector) {
+        constructor(title, descr, price, imgSrc, imgAlt, parentSelector, ...classes) {
             this.title = title;
             this.descr = descr;
             this.price = price;
             this.imgSrc = imgSrc;
             this.imgAlt = imgAlt;
+
+            this.classes = classes; // не стоит забывать что это массив
+            // такой вариант не сработает, потому что у нас
+            // 1) лежит пустой массив, а он не является логическим false
+            // 2) мы этот массив превращаем в строку и дальше перебрать его не сможем
+            // this.classes = classes || 'какой-то класс'
+
             this.parent = document.querySelector(parentSelector); // DOM элемент
             this.transfer = 75; // курс валют
             this.convertToRUB(); // методы можно вызывать прямо в конструкторе
@@ -226,16 +236,38 @@ window.addEventListener('DOMContentLoaded', () => {
         render() {
             // создаем элемент и помещаем в него верстку
             const element = document.createElement('div');
+            // назначим сами в rest параметр по умолчанию
+            // на случай, если пользователь забыл передать главный класс в элемент
+            // если в rest ничего не передали, то будет все равно сформирован пустой массив
+            // если проверить передано ли туда что-то (в rest), то выдаст true
+            // в связи с этим нужно проверять на количество элементов в массиве
+            // точно также ведут себя методы querySelectorAll, getElements...итд
+            // если ничего не передано, то сделаем дефолтный класс
+            if (this.classes.length === 0) {
+                // вдруг нам этот класс в будущем понадобится
+                // запишем его в пустое свойство
+                // я так понял имя может быть рандомное
+                // здесь elemen это не константа выше, а новое свойство глоб. объекта
+                this.element = 'menu__item';
+                element.classList.add(this.element);
+            } else {
+                // UPD: Обновлено с использованием rest
+                // обработаем массив классов, переданный с помощью rest-оператора
+                // Добавляем новосозданному элементу еще классов, переданных с rest
+                this.classes.forEach(className => element.classList.add(className));
+            }
+
+            // Теперь нужно чуток изменить верстку
+            // убрана обертка <div class="menu__item">. Теперь подставляем напрямую
+            // и будет его передавать при формировании верстки через метод
             element.innerHTML = `
-                <div class="menu__item">
-                    <img src=${this.imgSrc} alt=${this.imgAlt}>
-                    <h3 class="menu__item-subtitle">${this.title}</h3>
-                    <div class="menu__item-descr">${this.descr}</div>
-                    <div class="menu__item-divider"></div>
-                    <div class="menu__item-price">
-                        <div class="menu__item-cost">Цена:</div>
-                        <div class="menu__item-total"><span>${this.price}</span> руб/день</div>
-                    </div>
+                <img src=${this.imgSrc} alt=${this.imgAlt}>
+                <h3 class="menu__item-subtitle">${this.title}</h3>
+                <div class="menu__item-descr">${this.descr}</div>
+                <div class="menu__item-divider"></div>
+                <div class="menu__item-price">
+                    <div class="menu__item-cost">Цена:</div>
+                    <div class="menu__item-total"><span>${this.price}</span> руб/день</div>
                 </div>
             `;
 
@@ -280,7 +312,8 @@ window.addEventListener('DOMContentLoaded', () => {
         21,
         'img/tabs/elite.jpg',
         'elite',
-        '.menu .container'
+        '.menu .container',
+        'menu__item'
     ).render();
 
     new MenuCard(
@@ -289,7 +322,8 @@ window.addEventListener('DOMContentLoaded', () => {
         14,
         'img/tabs/post.jpg',
         'post',
-        '.menu .container'
+        '.menu .container',
+        'menu__item'
     ).render();
 
     // после рендера их на страницу - нужно удалить эти карточки в html
