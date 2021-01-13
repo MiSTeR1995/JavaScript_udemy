@@ -45,7 +45,6 @@ let pos = 0;
 // суть этого метода, она запускает функцию в виде колбека
 
 function myAnimation() {
-
     pos++;
     elem.style.top = pos + 'px';
     elem.style.left = pos + 'px';
@@ -61,8 +60,7 @@ function myAnimation() {
 
 // по клику запустим выполнение этой функции
 btn.addEventListener('click', () => {
-    if(pos < 300)
-        requestAnimationFrame(myAnimation);
+    if (pos < 300) requestAnimationFrame(myAnimation);
 });
 
 // эту анимацию также можно останавливать как интервалы
